@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 45vmin;
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App-landing {
+  position: relative;
+  bottom: 10vh;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #00b3ff;
+}
+
+/* The progress container (grey background) */
+#progress-container {
+  position: relative;
+  width: 100%;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+#progress-bar {
+  height: 1vh;
+  background: #00b3ff;
+  width: 0%;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.7rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-container {
+  height: 8vh;
+  min-height: 2.5rem;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.navbar {
+  height: 8vh;
+  min-height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-filler {
+  flex-grow: 1;
+}
+
+.content {
+  padding: 16px;
+}
+
+body {
+  background: #fff;
+}
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  bottom: 5%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(8px, 8px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-3px, -3px);
+  }
+}
