@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollIndicator from "./ScrollIndicator";
-import whiteLogo from "../white-logo.png";
+import whiteLogo from "../images/white-logo.png";
 
 const Navbar = () => {
   return (
