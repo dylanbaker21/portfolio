@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../logo.png";
+import logo from "../logo-white.png";
 
 const LandingPage = () => {
   return (
-    <div className="App-landing">
-      <img src={logo} className="App-logo" alt="logo" />
+    <div className="landing-page">
+      <img src={logo} className="landing-logo" alt="logo" data-aos="zoom-out" />
       <div className="arrow"></div>
     </div>
   );
