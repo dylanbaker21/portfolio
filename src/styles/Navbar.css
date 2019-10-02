@@ -1,14 +1,3 @@
-.App {
-  text-align: center;
-  background-color: rgb(42, 42, 42);
-}
-
-html,
-body {
-  overscroll-behavior: none;
-  overflow-x: hidden;
-}
-
 /* The progress container (grey background) */
 #progress-container {
   position: relative;
@@ -30,14 +19,16 @@ body {
   padding: 0.7rem;
   text-decoration: none;
   font-size: 1.5rem;
+  margin: auto;
 }
 
-.navbar a:hover {
+/* highlight when section active */
+[data-aos="about-highlight"] {
+  color: #ffffff;
+  transition-property: color;
+}
+[data-aos="about-highlight"].aos-animate {
   color: #fc5457;
-  text-align: center;
-  padding: 0.7rem;
-  text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .nav-container {
@@ -50,14 +41,14 @@ body {
   width: 100%;
   z-index: 99;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
 .navbar {
   height: 8vh;
   min-height: 2.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #nav-filler {

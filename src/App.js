@@ -2,9 +2,10 @@ import React from "react";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/AboutPage";
-import "./App.css";
-import "./Landing.css";
-import "./About.css";
+import "./styles/App.css";
+import "./styles/Landing.css";
+import "./styles/About.css";
+import "./styles/Navbar.css";
 
 function App() {
   return (
