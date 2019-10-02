@@ -11,7 +11,7 @@ const Navbar = () => {
       className="nav-container"
     >
       <nav className="navbar">
-        <a href="#home" style={{ height: "30px" }}>
+        <a href="/#landing-page" style={{ height: "30px" }}>
           <img
             border="0"
             alt="White logo"
@@ -21,9 +21,30 @@ const Navbar = () => {
           />
         </a>
         <div id="nav-filler" />
-        <a href="#home">About</a>
-        <a href="#news">Projects</a>
-        <a href="#contact">Contact</a>
+        <a
+          id="about"
+          href="#about-container"
+          data-aos="about-highlight"
+          data-aos-anchor="#about-container"
+        >
+          About
+        </a>
+        <a
+          id="projects"
+          href="#projects"
+          data-aos="projects-highlight"
+          data-aos-anchor=".projects-container"
+        >
+          Projects
+        </a>
+        <a
+          id="contact"
+          href="#contact"
+          data-aos="contact-highlight"
+          data-aos-anchor=".contact-container"
+        >
+          Contact
+        </a>
       </nav>
       <ScrollIndicator />
     </div>
