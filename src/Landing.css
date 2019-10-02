@@ -1,0 +1,70 @@
+/* main logo */
+.landing-logo {
+  position: absolute;
+  height: 45vmin;
+  top: 20%;
+}
+
+.landing-page {
+  position: relative;
+  background-color: rgb(42, 42, 42);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* animated arrow indicator */
+/*  */
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  bottom: 15%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #ffffff solid;
+  border-bottom: 2px #ffffff solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1.5px #ffffff solid;
+  border-bottom: 1.5px #ffffff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+/* animation */
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(8px, 8px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-3px, -3px);
+  }
+}
+/*  */
+/* animated arrow indicator */

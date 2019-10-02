@@ -1,36 +1,12 @@
 .App {
   text-align: center;
+  background-color: rgb(42, 42, 42);
 }
 
-.App-logo {
-  height: 45vmin;
-  animation: fadein 3s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.App-landing {
-  position: relative;
-  bottom: 10vh;
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #00b3ff;
+html,
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 /* The progress container (grey background) */
@@ -43,13 +19,21 @@
 /* The progress bar (scroll indicator) */
 #progress-bar {
   height: 1vh;
-  background: #00b3ff;
+  background: #fc5457;
   width: 0%;
 }
 
 /* Navbar links */
 .navbar a {
-  color: #f2f2f2;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.7rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  color: #fc5457;
   text-align: center;
   padding: 0.7rem;
   text-decoration: none;
@@ -59,10 +43,12 @@
 .nav-container {
   height: 8vh;
   min-height: 2.5rem;
-  background-color: #333;
+  background-color: #4c4c4c;
+  box-shadow: 0px 1.25vh 1vh rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .navbar {
@@ -76,60 +62,4 @@
 
 #nav-filler {
   flex-grow: 1;
-}
-
-.content {
-  padding: 16px;
-}
-
-body {
-  background: #fff;
-}
-
-.arrow,
-.arrow:before {
-  position: absolute;
-  left: 50%;
-}
-
-.arrow {
-  width: 40px;
-  height: 40px;
-  bottom: 5%;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #000 solid;
-  border-bottom: 2px #000 solid;
-}
-
-.arrow:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #000 solid;
-  border-bottom: 1px #000 solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-    transform: translate(8px, 8px);
-  }
-  75% {
-    opacity: 1;
-    transform: translate(-3px, -3px);
-  }
 }
