@@ -20,29 +20,36 @@ const Navbar = () => {
         />
       </a>
       <div id="nav-filler" />
-      <a
-        id="about"
-        href="#about-container"
-        data-aos="about-highlight"
-        data-aos-anchor="#about-container"
-      >
-        About
+      <a href="#about-container">
+        <span
+          id="about"
+          data-aos="about-highlight"
+          data-aos-mirror="true"
+          data-aos-anchor="#about-container"
+        >
+          {" "}
+          About
+        </span>
       </a>
-      <a
-        id="projects"
-        href="#projects"
-        data-aos="projects-highlight"
-        data-aos-anchor=".projects-container"
-      >
-        Projects
+      <a href="#projects-container">
+        <span
+          id="projects"
+          data-aos="projects-highlight"
+          data-aos-mirror="true"
+          data-aos-anchor="#projects-container"
+        >
+          {" "}
+          Projects
+        </span>
       </a>
-      <a
-        id="contact"
-        href="#contact"
-        data-aos="contact-highlight"
-        data-aos-anchor=".contact-container"
-      >
-        Contact
+      <a href="#contact-container">
+        <span
+          id="contact"
+          data-aos="contact-highlight"
+          data-aos-anchor="#contact-container"
+        >
+          Contact
+        </span>
       </a>
       <ScrollIndicator />
     </div>

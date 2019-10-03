@@ -31,6 +31,22 @@
   color: #fc5457;
 }
 
+[data-aos="projects-highlight"] {
+  color: #ffffff;
+  transition-property: color;
+}
+[data-aos="projects-highlight"].aos-animate {
+  color: #fc5457;
+}
+
+[data-aos="contact-highlight"] {
+  color: #ffffff;
+  transition-property: color;
+}
+[data-aos="contact-highlight"].aos-animate {
+  color: #fc5457;
+}
+
 /* space filler div */
 #nav-filler {
   flex-grow: 1;

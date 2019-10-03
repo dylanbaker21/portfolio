@@ -1,0 +1,14 @@
+#projects-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(42, 42, 42);
+}
+
+.project-tile {
+  background-color: #3b3b3b;
+  margin: 5vh auto 0vh;
+  border: 1vh solid #3b3b3b;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 80%;
+}
