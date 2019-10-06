@@ -36,12 +36,13 @@ class ContactPage extends Component {
         <div id="contact-container">
           <form
             id="contact-form"
-            method="post"
+            method="POST"
             data-netlify="true"
             data-netlify-recaptcha="true"
             name="contact"
             onSubmit={this.handleSubmit}
           >
+            <input type="hidden" name="form-name" value="contact" />
             <input
               className="form-input"
               placeholder="Name"
