@@ -8,40 +8,25 @@
   </head>
   <body>
         <form
-        id="contact-form"
         method="POST"
-        data-netlify="true"
-        data-netlify-recaptcha="true"
         name="contact"
       >
-        <input type="hidden" name="form-name" value="contact" />
         <input
-          className="form-input"
-          placeholder="Name"
           type="text"
           name="name"
-          required
         />
         <br />
         <input
-          className="form-input"
-          placeholder="Email"
           type="email"
           name="email"
-          required
         />
         <br />
         <textarea
-          className="form-input"
-          placeholder="Message"
           type="text"
           name="message"
-          rows="5"
-          required
         ></textarea>
         <br />
-        <div data-netlify-recaptcha="true"></div>
-        <button className="form-submit" type="submit">
+        <button type="submit">
           Send
         </button>
       </form>

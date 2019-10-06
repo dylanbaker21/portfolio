@@ -38,7 +38,6 @@ class ContactPage extends Component {
             id="contact-form"
             method="POST"
             data-netlify="true"
-            data-netlify-recaptcha="true"
             name="contact"
             onSubmit={this.handleSubmit}
           >
@@ -74,7 +73,6 @@ class ContactPage extends Component {
               required
             />
             <br />
-            <div data-netlify-recaptcha="true"></div>
             <button className="form-submit" type="submit">
               Send
             </button>
