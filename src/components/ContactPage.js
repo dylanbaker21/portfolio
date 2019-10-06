@@ -11,7 +11,13 @@ const ContactPage = () => {
       {/* title underline */}
       <div className="underline" data-aos="flip-right"></div>
       <div id="contact-container">
-        <form id="contact-form" method="POST" data-netlify="true">
+        <form
+          id="contact-form"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          name="contact"
+        >
           <input
             className="form-input"
             placeholder="Name"
