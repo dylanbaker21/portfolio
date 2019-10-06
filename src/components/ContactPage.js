@@ -75,7 +75,9 @@ class ContactPage extends Component {
             />
             <br />
             <div data-netlify-recaptcha="true"></div>
-            <input className="form-submit" type="submit" value="Send" />
+            <button className="form-submit" type="submit">
+              Send
+            </button>
           </form>
         </div>
         <a
