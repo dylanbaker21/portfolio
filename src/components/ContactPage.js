@@ -13,11 +13,12 @@ const ContactPage = () => {
       <div id="contact-container">
         <form
           id="contact-form"
-          method="POST"
+          method="post"
           data-netlify="true"
           data-netlify-recaptcha="true"
           name="contact"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <input
             className="form-input"
             placeholder="Name"
