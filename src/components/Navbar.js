@@ -31,7 +31,7 @@ const Navbar = () => {
           About
         </span>
       </a>
-      <a href="#projects-container">
+      <a href="#project-background">
         <span
           id="projects"
           data-aos="projects-highlight"
@@ -42,7 +42,7 @@ const Navbar = () => {
           Projects
         </span>
       </a>
-      <a href="#contact-container">
+      <a href="#contact-background">
         <span
           id="contact"
           data-aos="contact-highlight"
