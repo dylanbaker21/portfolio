@@ -40,6 +40,7 @@ class ContactPage extends Component {
             data-netlify="true"
             data-netlify-recaptcha="true"
             name="contact"
+            onSubmit={this.handleSubmit}
           >
             <input
               className="form-input"
