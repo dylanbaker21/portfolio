@@ -51,7 +51,7 @@ const AboutPage = () => {
             imgSrc={responsive}
             imgAlt={"devices icon"}
             content={
-              "With the amount of web traffic from mobile devices constantly increasing, ensuring designs look and feel good on screens of all sizes is a top priority."
+              "Ensuring designs look and perform well on screens of all sizes is a top priority."
             }
           />
           {/* performant slide */}
@@ -61,7 +61,7 @@ const AboutPage = () => {
             imgSrc={performant}
             imgAlt={"lightning bolt icon"}
             content={
-              "Utilizing best practices and the latest technologies to minimize load times and provide an expereince that feels smooth."
+              "Utilizing best practices and the latest technologies to minimize load times and provide a smooth experience."
             }
           />
         </div>
