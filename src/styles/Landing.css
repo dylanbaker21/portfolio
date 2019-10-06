@@ -5,7 +5,7 @@
   top: 20%;
 }
 
-.landing-page {
+#landing-page {
   position: relative;
   background-color: rgb(42, 42, 42);
   min-height: 100vh;

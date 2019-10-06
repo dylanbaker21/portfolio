@@ -8,7 +8,7 @@ import AboutSlide from "./AboutSlide";
 const AboutPage = () => {
   return (
     <div className="about-background">
-      <div className="about-container">
+      <div id="about-container">
         {/* title */}
         <h1 className="about" data-aos="fade-down">
           About
@@ -18,10 +18,10 @@ const AboutPage = () => {
         {/* bio */}
         <p className="content">
           <span className="accent">Hi</span>, my name is Dylan Baker and I'm a
-          <span className="accent"> full stack web developer</span> with a
-          passion for <span className="accent">blockchain</span> technology. I
-          take pride in creating clean, intuitive, responsive and performant web
-          apps.
+          <span className="accent"> full stack web developer</span> with
+          experience developing <span className="accent">blockchain</span>{" "}
+          applications. I take pride in creating clean, intuitive, responsive
+          and performant web apps.
         </p>
         <div className="icon-container">
           {/* clean slide */}
@@ -51,7 +51,7 @@ const AboutPage = () => {
             imgSrc={responsive}
             imgAlt={"devices icon"}
             content={
-              "With the amount of web traffic from mobile devices constantly increasing, ensuring designs look and feel good on screens of all sizes is a top priority."
+              "Ensuring designs look and perform well on screens of all sizes is a top priority."
             }
           />
           {/* performant slide */}
@@ -61,7 +61,7 @@ const AboutPage = () => {
             imgSrc={performant}
             imgAlt={"lightning bolt icon"}
             content={
-              "Utilizing best practices and the latest technologies to minimize load times and provide an expereince that feels smooth."
+              "Utilizing best practices and the latest technologies to minimize load times and provide a smooth experience."
             }
           />
         </div>

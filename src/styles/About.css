@@ -7,18 +7,17 @@
 .about-background {
   background-color: rgb(42, 42, 42);
   width: 90vw;
-  padding: 5%;
+  padding: 2.5% 0;
+  margin: auto;
 }
 
-.about-container {
+#about-container {
   background-color: rgb(42, 42, 42);
   color: #ffffff;
   width: 80vw;
   display: flex;
   flex-direction: column;
-  padding: 5% auto;
   margin: auto;
-  /* border: 0.5rem solid #000000; */
 }
 
 .accent {
@@ -42,14 +41,9 @@
   flex-direction: column;
 }
 
-/* .subheader-accent,
-.icon-subcontainer p {
-  margin: 10vh auto 0vh;
-} */
-
 .icon-subcontainer {
   background-color: #3b3b3b;
-  margin: 10vh auto 0vh;
+  margin: 5vh auto 0vh;
   border: 1vh solid #3b3b3b;
   border-radius: 0.25rem;
   padding: 1rem;
