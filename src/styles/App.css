@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  background-color: rgb(42, 42, 42);
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}

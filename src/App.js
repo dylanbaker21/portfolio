@@ -2,9 +2,14 @@ import React from "react";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/AboutPage";
-import "./App.css";
-import "./Landing.css";
-import "./About.css";
+import ProjectPage from "./components/ProjectPage";
+import ContactPage from "./components/ContactPage";
+import "./styles/App.css";
+import "./styles/Landing.css";
+import "./styles/About.css";
+import "./styles/Navbar.css";
+import "./styles/Project.css";
+import "./styles/Contact.css";
 
 function App() {
   return (
@@ -12,6 +17,8 @@ function App() {
       <LandingPage />
       <Navbar />
       <AboutPage />
+      <ProjectPage />
+      <ContactPage />
     </div>
   );
 }
