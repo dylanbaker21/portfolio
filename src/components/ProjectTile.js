@@ -4,11 +4,8 @@ import PropTypes from "prop-types";
 const ProjectTile = props => {
   return (
     <div className="project-tile">
-      <h2>VSCO Viewer</h2>
-      <p>
-        Web scraping tool used to display full-resolution social media profile
-        pictures
-      </p>
+      <h2>{props.title}</h2>
+      <p>{props.header}</p>
       <img
         className="project-images"
         src={props.thumbnail}
